@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Contatos</string>
+    <string name="action_cadastro">Novo contato</string>
+</resources>
