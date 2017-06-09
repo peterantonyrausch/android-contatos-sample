@@ -18,7 +18,7 @@ import com.supero.rausch.contatos.models.Contato;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseAppCompatActivity {
 
     List<Contato> contatos;
     ContatoAdapter adapter;

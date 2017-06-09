@@ -3,7 +3,6 @@ package com.supero.rausch.contatos;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,7 +23,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class CadastroActivity extends AppCompatActivity {
+public class CadastroActivity extends BaseAppCompatActivity {
 
     private ContatoRepository repository = new ContatoRepository(this);
     private long idEdicao = 0;
@@ -81,8 +80,10 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!hasFocus) {
-                    CepService task = new CepService();
-                    task.execute(inputCep.getText().toString());
+                    if (hasConnectivity()) {
+                        CepService task = new CepService();
+                        task.execute(inputCep.getText().toString());
+                    }
                 }
             }
         });
