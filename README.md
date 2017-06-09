@@ -55,5 +55,5 @@ Se a validação dos campos estiver corretos, abrir uma outra tela com uma
 mensagem de sucesso.
 
 Para buscar o endereço pode utilizar qualquer um dos web services abaixo:
-https://viacep.com.br/ws/01001000/json
-http:// http://correiosapi.apphb.com/cep/76873274
+- https://viacep.com.br/ws/01001000/json
+- http://correiosapi.apphb.com/cep/76873274
